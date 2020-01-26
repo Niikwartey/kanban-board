@@ -1,0 +1,8 @@
+.Card {
+  flex-grow: 1;
+}
+
+.Card .task {
+  border-top: 2px solid #ECEEEE;
+  border-bottom: 2px solid #ECEEEE;
+}
