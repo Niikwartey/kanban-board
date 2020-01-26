@@ -4,7 +4,7 @@ import { Add, FormPrevious, FormNext} from 'grommet-icons';
 import './style.css'
  
 function Card({name, tasks, color, cardIndex, updateCard, updateTask}) {
-  const addCard = () => {
+  const addTask = () => {
     const newTask = window.prompt("Add a task");
     if (newTask) {
       updateCard(cardIndex, newTask);
@@ -50,7 +50,7 @@ function Card({name, tasks, color, cardIndex, updateCard, updateTask}) {
         <Button 
           label={<Text size="small">Add a Card</Text>} 
           icon={<Add size="small" />}
-          onClick={addCard}
+          onClick={addTask}
           focusIndicator={false}
           plain
         />
