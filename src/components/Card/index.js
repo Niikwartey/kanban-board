@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Text, Button } from 'grommet';
-import { Add, FormPrevious, FormNext} from 'grommet-icons';
-import './style.css'
+import { Add, FormPrevious, FormNext } from 'grommet-icons';
+import './style.css';
  
 function Card({name, tasks, color, cardIndex, updateCard, updateTask}) {
   const addTask = () => {
@@ -18,7 +18,7 @@ function Card({name, tasks, color, cardIndex, updateCard, updateTask}) {
   return (
     <div className="Card">
       <Box width="100%" background="white">
-        <Box background={color} height="30px" justify="center">
+        <Box background={color} height="35px" justify="center">
           <Text color="#fff" size="small" weight="bold">{name}</Text>
         </Box>
 
@@ -33,7 +33,7 @@ function Card({name, tasks, color, cardIndex, updateCard, updateTask}) {
                   }} 
                 />
 
-                <Text truncate>{task}</Text>
+                <Text truncate size="small">{task}</Text>
 
                 <FormNext
                   onClick={() => moveCard(task, index, cardIndex, cardIndex + 1)}
